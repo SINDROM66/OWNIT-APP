@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #F4F9F5;
+  --surf: #FFFFFF;
+  --surf2: #EEF7F1;
+  --surf3: #E2F2E8;
+  --green: #1A7A45;
+  --greenM: #22A05A;
+  --greenL: #4DC97A;
+  --greenXL: #D4EFE0;
+  --greenD: #0F4D2B;
+  --gold: #C17F00;
+  --goldXL: #FFF8E1;
+  --text: #0D1F15;
+  --text2: #2E4A38;
+  --text3: #5A7A64;
+  --muted: #8AA898;
+  --border: #C8E3D0;
+  --border2: #A8D4B8;
+  --red: #C0392B;
+  --blue: #1565C0;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #D6EBD9;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+/* Scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  background: var(--surf2);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--green);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--green);
+}
+
+/* Range slider */
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--green);
+  cursor: pointer;
+}
+
+/* Button base */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  transition: opacity 0.15s;
+}
+
+button:active {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Utility classes */
+.hero {
+  background: var(--green);
+  padding: 48px 20px 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  background: var(--surf);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+}
+
+.big-btn {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+}
+
+.big-btn:active {
+  opacity: 0.85;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+}
