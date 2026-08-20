@@ -405,7 +405,16 @@ export default function OwnItUgandaApp() {
                   </button>
                 </div>
               )}
-            </>
+            <div style={{
+              fontSize: '9px',
+              color: 'var(--muted)',
+              textAlign: 'center',
+              padding: '16px 0 24px',
+              fontWeight: 500,
+              fontFamily: 'inherit'
+            }}>
+              © 2026 Samuel Lyomoki Junior. All Rights Reserved.
+            </div>
           )}
         </div>
 

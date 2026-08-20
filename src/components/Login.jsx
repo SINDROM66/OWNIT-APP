@@ -171,6 +171,9 @@ export default function Login({ onLoginSuccess, onSwitchToRegister, onForgotPass
               <button style={{ background: 'none', border: 'none', color: 'var(--green)', cursor: 'pointer', fontFamily: 'inherit', textDecoration: 'underline' }}>
                 Privacy Policy
               </button>
+              <div style={{ fontSize: '8.5px', marginTop: '10px', color: 'var(--muted)', fontWeight: 500 }}>
+                © 2026 Samuel Lyomoki Junior. All Rights Reserved.
+              </div>
             </div>
           </div>
         </div>

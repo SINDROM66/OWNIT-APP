@@ -323,6 +323,9 @@ export default function Register({ onRegisterSuccess, onSwitchToLogin }) {
               >
                 Sign in
               </button>
+              <div style={{ fontSize: '8.5px', marginTop: '14px', color: 'var(--muted)', fontWeight: 500 }}>
+                © 2026 Samuel Lyomoki Junior. All Rights Reserved.
+              </div>
             </div>
           </div>
         </div>

@@ -79,6 +79,9 @@ export default function WelcomeScreen({ onGetStarted, onLogin }) {
 
             <div style={{ fontSize: '10px', color: 'var(--muted)', textAlign: 'center', marginTop: '14px', lineHeight: 1.5 }}>
               Regulated · Secure · Ugandan-owned
+              <div style={{ fontSize: '9px', marginTop: '6px', fontWeight: 500 }}>
+                © 2026 Samuel Lyomoki Junior. All Rights Reserved.
+              </div>
             </div>
           </div>
         </div>

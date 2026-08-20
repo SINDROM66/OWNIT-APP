@@ -165,9 +165,54 @@ button:disabled {
   }
 }
 
-/* Responsive */
-@media (max-width: 480px) {
+/* Responsive Overrides to Force Full Screen on Mobile Devices */
+@media (max-width: 768px) {
   body {
-    padding: 8px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: var(--bg) !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+  }
+
+  /* Root container override - discard flex centering and outer margins */
+  #root > div {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: var(--bg) !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: block !important;
+  }
+
+  /* Phone frame override - strip borders, rounded corners, and shadow frames */
+  #root > div > div {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Scrollable screen content override - expand to fill the full viewport */
+  #root > div > div > div:first-child {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    border-radius: 0 !important;
+    padding-bottom: 90px !important; /* leaves room for bottom navigation bar */
+  }
+
+  /* Fixed Navigation bar on mobile */
+  #root > div > div > nav {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0 !important;
+    background: var(--surf) !important;
   }
 }
